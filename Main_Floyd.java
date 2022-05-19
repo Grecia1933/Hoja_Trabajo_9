@@ -4,9 +4,9 @@
 
 /*
    * Distancia entre ciudades - Algoritmo de Floyd.
-   * Es decir, la ruta más corta entre cada vértice en el gráfico estadístico.
+   * La ruta más corta entre cada vértice en el gráfico estadístico.
  *
-   * Descripción del parámetro:
+   * Parámetros:
    * Dibujo G
    * camino-el camino. ruta [i] [j] = k significa que la ruta más corta desde el "vértice i" al "vértice j" pasará por el vértice k.
    * matriz dist-length. Es decir, dist [i] [j] = sum indica que la longitud del camino más corto desde el "vértice i" hasta el "vértice j" es la suma.
