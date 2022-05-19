@@ -1,8 +1,0 @@
-//Matriz de Adyacencia 
-typedef struct_graph 
-{
-        Char vex [MAX]; // Coleccion de vertices 
-        int vexnum; // Número de vertices 
-        int edgnum; // Número de aristas 
-        matriz int [MAX] [MAX]; // Matriz de adyacencia
-        }
