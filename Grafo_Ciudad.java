@@ -2,7 +2,7 @@
 #include<string>
 using namespace std; 
 
-class Implementacion { 
+class Grafo_Ciudad { 
   private:
     int vexnum; // Número de vertices del gráfico 
     int edge; // Número de aristas del gráfico 
@@ -12,9 +12,9 @@ class Implementacion {
   
 public : 
   // Constructor 
-  Implementacion(int vexnum, int edge); 
+  Grafo_Ciudad(int vexnum, int edge); 
   // Destructor 
-   ~Implementacion();
+   ~Grafo_Ciudad();
     // Verificar si la información del borde ingresada es legal cada vez
     // Los vértices están numerados de 1
     bool check_edge_value(int start, int end, int weight);
