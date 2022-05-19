@@ -2,7 +2,7 @@
 #include<string>
 using namespace std; 
 
-class Graph_DG { 
+class Implementacion { 
   private:
     int vexnum; // Número de vertices del gráfico 
     int edge; // Número de aristas del gráfico 
@@ -12,9 +12,9 @@ class Graph_DG {
   
 public : 
   // Constructor 
-  Graph_DG(int vexnum, int edge); 
+  Implementacion(int vexnum, int edge); 
   // Destructor 
-   ~Graph_DG();
+   ~Implementacion();
     // Verificar si la información del borde ingresada es legal cada vez
     // Los vértices están numerados de 1
     bool check_edge_value(int start, int end, int weight);
