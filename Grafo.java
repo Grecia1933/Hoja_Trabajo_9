@@ -2,7 +2,7 @@
  
  
 // Constructor
-Grafo_Ciudad::Grafo_Ciudad(int vexnum, int edge) {
+Grafo_Floyd::Grafo_Floyd(int vexnum, int edge) {
     // Inicializa el número de vértices y aristas
     this->vexnum = vexnum;
     this->edge = edge;
@@ -21,7 +21,7 @@ Grafo_Ciudad::Grafo_Ciudad(int vexnum, int edge) {
     }
 }
 // Destructor
-Grafo_Ciudad::~Grafo_Ciudad() {
+Grafo_Floyd::~Grafo_Floyd() {
  
     for (int i = 0; i < this->vexnum; i++) {
         delete this->arc[i];
@@ -36,14 +36,14 @@ Grafo_Ciudad::~Grafo_Ciudad() {
  
 
 // Los vértices están numerados de 1
-bool Grafo_Ciudad::check_edge_value(int start, int end, int weight) {
+bool Grafo_Floyd::check_edge_value(int start, int end, int weight) {
     if (start<1 || end<1 || start>vexnum || end>vexnum || weight < 0) {
         return false;
     }
     return true;
 }
  
-void Grafo_Ciudad::createGraph(int kind) {
+void Grafo_Floyd::createGraph(int kind) {
     cout << "Ingrese el inicio y el final de cada borde (el número de vértice comienza desde 1) y su peso" << endl;
     int start;
     int end;
@@ -65,7 +65,7 @@ void Grafo_Ciudad::createGraph(int kind) {
     }
 }
  
-void Grafo_Ciudad::print() {
+void Grafo_Floyd::print() {
     cout << "La matriz de adyacencia del gráfico es:" << endl;
     int count_row = 0; // Imprime la etiqueta de la línea
     int count_col = 0; // Imprime la etiqueta de la columna
@@ -84,7 +84,7 @@ void Grafo_Ciudad::print() {
     }
 }
  
-void Grafo_Ciudad::Floyd() {
+void Grafo_Floyd::Floyd() {
     int row = 0;
     int col = 0;
     for (row = 0; row < this->vexnum; row++) {
@@ -115,7 +115,7 @@ void Grafo_Ciudad::Floyd() {
     }
 }
  
-void Grafo_Ciudad::print_path() {
+void Grafo_Floyd::print_path() {
     cout << "La ruta más corta de cada par de vértices:" << endl;
     int row = 0;
     int col = 0;
